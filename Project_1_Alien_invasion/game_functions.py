@@ -10,12 +10,12 @@ def check_events(ai_settings, screen, ship, bullets):
             sys.exit()
         
         elif event.type == pygame.KEYDOWN:
-            check_keydown_events(event, ai_settings, screen,ship, bullets)             
+            check_keydown_events(event, ai_settings, screen, ship, bullets)             
         elif event.type == pygame.KEYUP:
             check_keyup_events(event, ship)
 
 
-def check_keydown_events(event, ai_settings, screen,ship, bullets):
+def check_keydown_events(event, ai_settings, screen, ship, bullets):
     # Respond to Keypresses
     if event.key == pygame.K_RIGHT:
         # Move the ship to the right.
